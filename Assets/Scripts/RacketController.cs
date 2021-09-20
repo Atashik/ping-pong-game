@@ -13,10 +13,6 @@ public class RacketController : MonoBehaviour
         racket.position = new Vector3(moveSlider.value, racket.position.y, 0.0f);
     }
 
-    void Update()
-    {
-        
-    }
 
     public void OnSliderMove()
     {

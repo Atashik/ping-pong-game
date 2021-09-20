@@ -8,16 +8,6 @@ public class BallControls : MonoBehaviour
     public Rigidbody2D ballRB;
     public GameLogic gameLogic;
 
-    void Start()
-    {
-        //StartGame();
-    }
-
-
-    void Update()
-    {
-        
-    }
 
     public void StartGame()
     {
@@ -27,11 +17,6 @@ public class BallControls : MonoBehaviour
         ballRB.velocity = Vector2.zero;
         ballRB.AddForce(new Vector2(Random.Range(-2.5f, 2.5f), Random.Range(-3.5f, 3.5f)), ForceMode2D.Impulse);
         //ball
-    }
-
-    public void RestartGame()
-    {
-
     }
 
     private void OnTriggerEnter2D(Collider2D other)

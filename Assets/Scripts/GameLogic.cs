@@ -11,7 +11,6 @@ public class GameLogic : MonoBehaviour
     public BoxCollider2D racketColliderEnemy;
     public Image ballUIImage;
     public Text scoreText;
-    //public GameObject ballGO;
     public Transform ballTr;
     private bool gameStarted = false;
     public BallControls ballControls;
@@ -64,7 +63,6 @@ public class GameLogic : MonoBehaviour
         PlayerPrefs.SetInt("loose", PlayerPrefs.GetInt("loose") + 1);
         scoreText.text = "Wins " + PlayerPrefs.GetInt("wins") + " : Loose " + PlayerPrefs.GetInt("loose");
         Time.timeScale = 0.0f;
-        //Debug.Log("Player loose");
     }
     public void PlayerWins()
     {
@@ -73,7 +71,6 @@ public class GameLogic : MonoBehaviour
         PlayerPrefs.SetInt("wins", PlayerPrefs.GetInt("wins") + 1);
         scoreText.text = "Wins " + PlayerPrefs.GetInt("wins") + " : Loose " + PlayerPrefs.GetInt("loose");
         Time.timeScale = 0.0f;
-        //Debug.Log("Player wins");
     }
     public void RestartGame()
     {
