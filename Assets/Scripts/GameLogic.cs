@@ -74,6 +74,7 @@ public class GameLogic : MonoBehaviour
     }
     public void RestartGame()
     {
+        pauseButton.SetActive(true);
         ballTr.position = Vector3.zero;
         Time.timeScale = 1.0f;
         ballControls.StartGame();
